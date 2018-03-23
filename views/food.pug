@@ -1,0 +1,19 @@
+extends index
+
+//-
+	Adds table to end of index data
+append content
+
+	table
+		each obj, index in data
+			//-
+				Wraps items to a 3-column table
+			if (index %3 == 0)
+				tr
+			td(align="center" style={width:'33%'})
+				//-
+					Set cell data
+				p(id = 'foodTitle')
+					b!=obj.title
+				a(target = "_blank" href = obj.f2f_url)
+					img(src = obj.image_url alt = "pics" width = "256" height = 256)

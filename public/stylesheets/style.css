@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Bazooka";
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* gradient background image definition */
+#gradient {
+    background-size: auto;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(#a54d52, #e89440);
+}
+
+/* Font for food titles */
+#foodTitle {
+  font: 14px Arial;
+}

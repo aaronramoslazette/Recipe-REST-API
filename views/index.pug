@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  //-
+    Set up the handler for get requests via submission box
+  form(method='GET' action='/recipes' name='ingredient')
+          div.input
+              span.label Ingredient:
+              input(type="text", name="ingredient")
+          div.actions
+              input(type="submit", value="Submit")
+  - var btnType = 'info'
+  - var btnSize = 'lg'
